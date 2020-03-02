@@ -1,0 +1,16 @@
+.principal{
+    height: 330px;
+    width: 220px;
+
+    background-color: #f0fefe;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.titulo{
+    color: #f0f0f0;
+    font-family: 'Amatic SC', cursive;
+    margin-left: 20px;
+}
