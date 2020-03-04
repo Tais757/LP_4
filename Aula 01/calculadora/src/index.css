@@ -10,7 +10,9 @@ body {
   height: 100vh; /*ocupar 100% da tela*/
   justify-content: center; 
   align-items: center; /*alinhamento*/
-  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+  /*background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));*/
+  background: linear-gradient(to right, #c94b4b, #4b134f);
 
 }
 

@@ -41,6 +41,18 @@ export default class Principal extends Component {
                     valores[0] = valores[0] + valores[1];
                     valores[1] = 0;
                     break;
+                case "-":
+                    valores[0] = valores[0] - valores[1];
+                    valores[1] = 0;
+                    break;
+                case "÷":
+                    valores[0] = valores[0] / valores[1];
+                    valores[1] = 0;
+                    break;
+                case "x":
+                    valores[0] = valores[0] * valores[1];
+                    valores[1] = 0;
+                    break;
                 default:
                     break;
             }
@@ -81,22 +93,22 @@ export default class Principal extends Component {
                 <Display valor={this.state.valorExibido} />
                 <Button rotulo="AC" espaco click={this.limpar} />
                 <Button rotulo="%" />
-                <Button rotulo="/" laranja />
+                <Button rotulo="÷" laranja click={this.realizarOperacao} />
                 <Button rotulo="7" click={this.adicionarDigito} />
                 <Button rotulo="8" click={this.adicionarDigito} />
                 <Button rotulo="9" click={this.adicionarDigito} />
-                <Button rotulo="*" laranja />
+                <Button rotulo="x" laranja click={this.realizarOperacao} />
                 <Button rotulo="4" click={this.adicionarDigito} />
                 <Button rotulo="5" click={this.adicionarDigito} />
                 <Button rotulo="6" click={this.adicionarDigito} />
-                <Button rotulo="-" laranja />
+                <Button rotulo="-" laranja click={this.realizarOperacao} />
                 <Button rotulo="1" click={this.adicionarDigito} />
                 <Button rotulo="2" click={this.adicionarDigito} />
                 <Button rotulo="3" click={this.adicionarDigito} />
-                <Button rotulo="+" click={this.realizarOperacao} laranja />
+                <Button rotulo="+" laranja click={this.realizarOperacao} />
                 <Button rotulo="0" espaco click={this.adicionarDigito} />
                 <Button rotulo="." click={this.adicionarDigito} />
-                <Button rotulo="=" click={this.realizarOperacao} laranja />
+                <Button rotulo="=" laranja click={this.realizarOperacao} />
 
             </div>
         );
